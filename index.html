@@ -1,95 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sai Kishore Addala | AI/ML Portfolio</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background-color: #0a0a0a; color: #fff; }
-    header { background-color: #111; padding: 1.5rem 0; text-align: center; position: sticky; top: 0; }
-    nav a { color: #00bfff; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    section { max-width: 900px; margin: auto; padding: 2rem; }
-    h1, h2 { color: #00bfff; }
-    .card {
-      background: #111;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,191,255,0.3);
-      margin-bottom: 20px;
-    }
-    .button {
-      display: inline-block;
-      background-color: #00bfff;
-      color: #000;
-      padding: 10px 20px;
-      margin-top: 10px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer {
-      background-color: #111;
-      text-align: center;
-      padding: 1rem;
-      color: #aaa;
-    }
+    :root { --brand:#00bfff; --bg:#0a0a0a; --panel:#111; --text:#fff; --muted:#a9b3bd; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    header{background:#0f0f0f;border-bottom:1px solid rgba(255,255,255,.06);padding:20px 16px}
+    .wrap{max-width:1000px;margin:0 auto;padding:0 8px}
+    .hero{display:grid;grid-template-columns:1fr 140px;gap:24px;align-items:center}
+    h1{margin:0 0 6px 0;color:var(--brand);font-size:28px}
+    .subtitle{margin:0;color:#eaeaea}
+    .avatar{width:140px;height:140px;border-radius:16px;object-fit:cover;border:2px solid var(--brand);box-shadow:0 0 12px rgba(0,191,255,.35)}
+    nav{margin-top:10px}
+    nav a{color:var(--brand);text-decoration:none;margin-right:14px;font-weight:700}
+    nav a:hover{text-decoration:underline}
+    section{max-width:1000px;margin:24px auto;padding:0 16px}
+    h2{color:var(--brand);margin:10px 0 14px}
+    .card{background:var(--panel);border:1px solid rgba(255,255,255,.05);border-radius:12px;padding:18px 20px;margin-bottom:16px;box-shadow:0 0 10px rgba(0,191,255,.18)}
+    .grid{display:grid;grid-template-columns:120px 1fr;gap:16px;align-items:start}
+    .thumb{width:120px;height:80px;border-radius:8px;object-fit:cover;border:1px solid rgba(255,255,255,.08)}
+    .muted{color:var(--muted)}
+    footer{margin:28px 0 18px;text-align:center;color:#9aa3aa}
+    /* buttons (kept in case we add later) */
+    .btn{display:inline-block;background:var(--brand);color:#000;padding:10px 16px;border-radius:6px;font-weight:700;text-decoration:none}
   </style>
 </head>
 <body>
+
+  <!-- Header / Hero -->
   <header>
-    <h1>Sai Kishore Addala</h1>
-    <p>AI & ML Graduate Student | Ethical & Explainable AI Enthusiast</p>
-    <nav>
-      <a href="#bio">Bio</a>
-      <a href="#artifacts">Artifacts</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="wrap hero">
+      <div>
+        <h1>Sai Kishore Addala</h1>
+        <p class="subtitle">AI & ML Graduate Student • Ethical & Explainable AI Enthusiast</p>
+        <nav>
+          <a href="#bio">Bio</a>
+          <a href="#artifacts">Artifacts</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <!-- Upload your image as avatar.jpg in the repo root -->
+      <img class="avatar" src="avatar.jpg" alt="Sai Kishore Addala">
+    </div>
   </header>
 
+  <!-- Bio -->
   <section id="bio">
-    <h2>Professional Bio</h2>
-    <div class="card">
-      <p>I am a results-driven AI/ML graduate student passionate about developing ethical, explainable, and user-centered AI solutions that bridge technology and human impact. My academic and professional interests include Responsible AI, Data Analytics, Cloud Integration, and AI-driven software engineering.</p>
+    <div class="wrap">
+      <h2>Professional Bio</h2>
+      <div class="card">
+        <p>I build ethical, explainable, and user-centered AI solutions that bridge innovation and human impact. My interests include Responsible AI, data analytics, cloud integration (AWS/Python), and AI-driven software engineering with Java/Spring Boot.</p>
+      </div>
     </div>
   </section>
 
+  <!-- Artifacts -->
   <section id="artifacts">
-    <h2>Artifacts</h2>
-    <div class="card">
-      <h3>The Evolution of AI: From Early Foundations to Generative Era</h3>
-      <p>A presentation exploring AI’s growth from early roots to generative models, highlighting key breakthroughs and leadership insights.</p>
-      <a class="button" href="Group 7-The Evolution of Artificial Intelligence.pptx" target="_blank">View Presentation (PPTX)</a>
-    </div>
+    <div class="wrap">
+      <h2>Artifacts</h2>
 
-    <div class="card">
-      <h3>AI Lab: Chatbot Assistant Prototype</h3>
-      <p>An AI-powered chatbot demonstrating natural language interaction and contextual response generation, created for Workshop 1.4.</p>
-      <a class="button" href="saikishore_Addala AI_Lab.docx" target="_blank">View Chatbot App (DOCX)</a>
+      <!-- Artifact 1 -->
+      <div class="card">
+        <div class="grid">
+          <!-- Upload ai-evolution.jpg to the repo (optional) -->
+          <img class="thumb" src="ai-evolution.jpg" alt="Evolution of AI thumbnail" onerror="this.style.display='none'">
+          <div>
+            <h3>Artifact 1 — The Evolution of Artificial Intelligence</h3>
+            <p class="muted">Objective:</p>
+            <p>Trace AI’s progression from early symbolic systems to modern deep learning and generative models, highlighting key milestones and leadership lessons.</p>
+            <p class="muted">Summary:</p>
+            <p>The work covers early foundations (Turing’s 1950 test; the 1956 Dartmouth Conference), the two AI winters, and the resurgence driven by data, compute, and neural networks. It discusses modern breakthroughs (e.g., GPT-style LLMs, AlphaGo/AlphaFold) and the role of cloud platforms in scaling AI R&amp;D and deployment. :contentReference[oaicite:0]{index=0}</p>
+            <p class="muted">Tools:</p>
+            <p>Presentation design (PowerPoint/Canva). </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Artifact 2 -->
+      <div class="card">
+        <div class="grid">
+          <!-- Upload ai-lab.jpg to the repo (optional) -->
+          <img class="thumb" src="ai-lab.jpg" alt="AI Lab thumbnail" onerror="this.style.display='none'">
+          <div>
+            <h3>Artifact 2 — AI Lab: Generative AI Practice & Career Mentor Prototype</h3>
+            <p class="muted">Objective:</p>
+            <p>Explore generative-AI behaviors across tasks, compare custom GPT personalities, use a research assistant (STORM AI) for structured summaries, apply design thinking, and prototype a “Career Mentor AI.”</p>
+            <p class="muted">Summary:</p>
+            <p>The lab documents prompt experiments (personalized learning, grading automation), observations on tone differences between customized GPTs, using a research assistant to organize insights, an empathy-driven design process, and deploying a simple mentor bot. Key takeaways include tailoring prompts, audience-aware tone, and combining technical accuracy with user empathy. :contentReference[oaicite:1]{index=1}</p>
+            <p class="muted">Tools:</p>
+            <p>Prompt design, research-assistant workflow, prototyping; Python/Chat tooling.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <div class="card">
-      <p>Click below to view my professional resume highlighting AI/ML integration, leadership, and software engineering experience.</p>
-      <a class="button" href="https://drive.google.com/file/d/126ZtwJK1IM0ovA_eTavaYhm0P8loW7Ds/view?usp=sharing" target="_blank">View Resume (PDF)</a>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
-      <p>Email: <a href="mailto:saikishore.addala@example.com" style="color:#00bfff;">saikishore.addala@example.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/saikishoreaddala" target="_blank" style="color:#00bfff;">linkedin.com/in/saikishoreaddala</a></p>
-      <p>GitHub: <a href="https://github.com/addalasaikishore63-arch" target="_blank" style="color:#00bfff;">github.com/addalasaikishore63-arch</a></p>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Sai Kishore Addala | Created for AI/ML Professional Portfolio</p>
-  </footer>
-</body>
-</html>
-
+  <!-- Contact -->
+  <se
