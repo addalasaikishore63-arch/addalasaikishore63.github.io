@@ -3,39 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sai Kishore Addala | AI & ML Portfolio</title>
+  <title>Sai Kishore Addala | AI/ML Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #0a0a0a;
-      color: white;
-      line-height: 1.6;
-    }
-    header {
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #0a0a0a; color: #fff; }
+    header { background-color: #111; padding: 1.5rem 0; text-align: center; position: sticky; top: 0; }
+    nav a { color: #00bfff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    section { max-width: 900px; margin: auto; padding: 2rem; }
+    h1, h2 { color: #00bfff; }
+    .card {
       background: #111;
-      padding: 2rem;
-      text-align: center;
-    }
-    h1 { color: #00bfff; }
-    section { padding: 2rem; max-width: 900px; margin: auto; }
-    a {
-      color: #00bfff;
-      text-decoration: none;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,191,255,0.3);
+      margin-bottom: 20px;
     }
     .button {
       display: inline-block;
       background-color: #00bfff;
-      color: black;
+      color: #000;
       padding: 10px 20px;
-      margin-top: 15px;
+      margin-top: 10px;
       border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
     }
     footer {
-      background: #111;
+      background-color: #111;
       text-align: center;
       padding: 1rem;
-      font-size: 0.9rem;
+      color: #aaa;
     }
   </style>
 </head>
@@ -43,18 +40,51 @@
   <header>
     <h1>Sai Kishore Addala</h1>
     <p>AI & ML Graduate Student | Ethical & Explainable AI Enthusiast</p>
-    <a href="https://drive.google.com/file/d/126ZtwJK1IM0ovA_eTavaYhm0P8loW7Ds/view?usp=sharing" class="button" target="_blank">📄 View Resume</a>
+    <nav>
+      <a href="#bio">Bio</a>
+      <a href="#artifacts">Artifacts</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>I am passionate about developing ethical, explainable, and user-centered AI solutions that bridge technology and human impact. Currently pursuing my M.S. in Artificial Intelligence & Machine Learning at Indiana Wesleyan University.</p>
+  <section id="bio">
+    <h2>Professional Bio</h2>
+    <div class="card">
+      <p>I am a results-driven AI/ML graduate student passionate about developing ethical, explainable, and user-centered AI solutions that bridge technology and human impact. My academic and professional interests include Responsible AI, Data Analytics, Cloud Integration, and AI-driven software engineering.</p>
+    </div>
+  </section>
 
+  <section id="artifacts">
     <h2>Artifacts</h2>
-    <ul>
-      <li><strong>📘 Artifact 1:</strong> <a href="Group 7-The Evolution of Artificial Intelligence.pptx" target="_blank">The Evolution of AI – From Early Foundations to Generative Era</a></li>
-      <li><strong>🤖 Artifact 2:</strong> <a href="saikishore_Addala AI_Lab.docx" target="_blank">AI Lab – Chatbot Assistant Prototype</a></li>
-    </ul>
+    <div class="card">
+      <h3>The Evolution of AI: From Early Foundations to Generative Era</h3>
+      <p>A presentation exploring AI’s growth from early roots to generative models, highlighting key breakthroughs and leadership insights.</p>
+      <a class="button" href="Group 7-The Evolution of Artificial Intelligence.pptx" target="_blank">View Presentation (PPTX)</a>
+    </div>
+
+    <div class="card">
+      <h3>AI Lab: Chatbot Assistant Prototype</h3>
+      <p>An AI-powered chatbot demonstrating natural language interaction and contextual response generation, created for Workshop 1.4.</p>
+      <a class="button" href="saikishore_Addala AI_Lab.docx" target="_blank">View Chatbot App (DOCX)</a>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <div class="card">
+      <p>Click below to view my professional resume highlighting AI/ML integration, leadership, and software engineering experience.</p>
+      <a class="button" href="https://drive.google.com/file/d/126ZtwJK1IM0ovA_eTavaYhm0P8loW7Ds/view?usp=sharing" target="_blank">View Resume (PDF)</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:saikishore.addala@example.com" style="color:#00bfff;">saikishore.addala@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/saikishoreaddala" target="_blank" style="color:#00bfff;">linkedin.com/in/saikishoreaddala</a></p>
+      <p>GitHub: <a href="https://github.com/addalasaikishore63-arch" target="_blank" style="color:#00bfff;">github.com/addalasaikishore63-arch</a></p>
+    </div>
   </section>
 
   <footer>
@@ -62,6 +92,4 @@
   </footer>
 </body>
 </html>
-
-<!-- Updated to trigger rebuild -->
 
