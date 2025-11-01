@@ -2,108 +2,255 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sai Kishore Addala – AI/ML Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sai Kishore Addala – AI/ML Professional Portfolio</title>
   <style>
-    body {
-      background-color: #0a0a0a;
-      color: #e0e0e0;
-      font-family: "Segoe UI", Roboto, sans-serif;
-      margin: 0;
-      padding: 0;
+    :root {
+      --bg:#0a0a0a; --panel:#111; --text:#e8e8e8; --muted:#a9b3bd; --brand:#00bfff; --rule:#1b1b1b;
     }
-    header {
-      text-align: center;
-      padding: 50px 20px 20px 20px;
-      position: relative;
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Segoe UI, Roboto, Arial, sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{padding:38px 16px 22px;border-bottom:1px solid var(--rule)}
+    .wrap{max-width:1000px;margin:0 auto;padding:0 10px}
+    .hero{display:grid;grid-template-columns:1fr 140px;gap:22px;align-items:center}
+    .avatar{width:140px;height:140px;border-radius:50%;border:2px solid var(--brand);object-fit:cover;box-shadow:0 0 14px rgba(0,191,255,.35)}
+    h1{margin:0 0 6px;color:var(--brand);font-size:28px}
+    .subtitle{margin:0 0 6px;color:#d7d7d7}
+    nav{margin-top:8px}
+    nav a{margin-right:14px;font-weight:600}
+    section{padding:28px 0}
+    h2{color:var(--brand);margin:0 0 16px}
+    .card{
+      background:var(--panel);border:1px solid var(--rule);border-radius:12px;
+      padding:20px 20px;box-shadow:0 0 10px rgba(0,191,255,.18);margin-bottom:18px
     }
-    header img {
-      position: absolute;
-      right: 10%;
-      top: 25px;
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 2px solid #00bfff;
-      object-fit: cover;
-    }
-    h1 {
-      color: #00bfff;
-      font-size: 2em;
-    }
-    h2 {
-      color: #00bfff;
-      border-bottom: 1px solid #333;
-      padding-bottom: 5px;
-    }
-    section {
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 20px;
-      background: #111;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #00bfff33;
-    }
-    p {
-      line-height: 1.6;
-      text-align: justify;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
-      color: #888;
-    }
-    a {
-      color: #00bfff;
-      text-decoration: none;
+    .field{margin:10px 0}
+    .field b{display:block;color:#bcd9ff;margin-bottom:4px;letter-spacing:.2px}
+    .field p{margin:0;text-align:justify}
+    .refs li{margin:4px 0}
+    footer{border-top:1px solid var(--rule);text-align:center;color:#9aa3aa;padding:18px 10px;margin-top:10px}
+    /* small screens */
+    @media (max-width:720px){
+      .hero{grid-template-columns:1fr;gap:14px;text-align:center}
+      .avatar{margin:0 auto}
     }
   </style>
 </head>
-
 <body>
+  <!-- Header -->
   <header>
-    <h1>Sai Kishore Addala</h1>
-    <h3>AI & ML Graduate Student | Ethical & Explainable AI Enthusiast</h3>
-    <img src="profile.jpg" alt="Sai Kishore Addala" />
+    <div class="wrap hero">
+      <div>
+        <h1>Sai Kishore Addala</h1>
+        <p class="subtitle">AI & ML Graduate Student • Ethical & Explainable AI Enthusiast</p>
+        <p class="subtitle">
+          Email: <a href="mailto:addalasaikishore63@gmail.com">addalasaikishore63@gmail.com</a> |
+          GitHub: <a href="https://github.com/addalasaikishore63-arch" target="_blank">github.com/addalasaikishore63-arch</a>
+        </p>
+        <nav>
+          <a href="#bio">Bio</a>
+          <a href="#artifacts">Artifacts</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <!-- image will try profile.jpg, else fall back to your uploaded filename -->
+      <img class="avatar" src="profile.jpg" alt="Sai Kishore Addala"
+           onerror="this.onerror=null;this.src='digital-human-visualization-stockcake.jpg'">
+    </div>
   </header>
 
-  <section>
-    <h2>Professional Bio</h2>
-    <p>
-      I am passionate about developing ethical, explainable, and user-centered AI solutions that bridge technology and human impact. My academic work at Indiana Wesleyan University focuses on responsible AI, data analytics, and cloud integration using AWS and Python. I aim to apply advanced machine learning methods to solve real-world challenges in decision-making, automation, and predictive analytics.
-    </p>
+  <!-- Bio -->
+  <section id="bio">
+    <div class="wrap">
+      <h2>Professional Bio</h2>
+      <div class="card">
+        <p>
+          I develop ethical, explainable, and user-centered AI solutions that bridge innovation and human impact. My current work at Indiana
+          Wesleyan University focuses on responsible AI, data analytics, and cloud integration using AWS and Python—paired with software
+          engineering experience in Java/Spring Boot. I translate complex AI/ML ideas into outcomes stakeholders can trust: clarity,
+          accountability, and measurable value.
+        </p>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Artifact 1: The Evolution of Artificial Intelligence</h2>
-    <p>
-      This presentation explores the historical evolution of Artificial Intelligence, tracing its journey from early symbolic systems to modern deep learning and generative models. It highlights key milestones such as Turing’s foundational test, the Dartmouth Conference, and the emergence of neural networks. 
-      The artifact also addresses challenges faced during the AI winters and emphasizes the leadership lessons drawn from technological growth, resilience, and ethical innovation. 
-      The goal was to understand how AI has evolved into a transformative technology shaping industries and human interactions today.
-    </p>
+  <!-- Artifacts (Professor's required format) -->
+  <section id="artifacts">
+    <div class="wrap">
+      <h2>Artifacts</h2>
+
+      <!-- Artifact 1 -->
+      <div class="card">
+        <h3>Artifact 1 — The Evolution of Artificial Intelligence</h3>
+
+        <div class="field"><b>Title</b>
+          <p>The Evolution of AI: From Early Foundations to the Generative Era</p>
+        </div>
+
+        <div class="field"><b>Introduction</b>
+          <p>
+            This artifact traces AI’s development from early symbolic programs to today’s deep learning and generative models. It explains why
+            progress arrived in waves—periods of optimism, “AI winters,” and renewed breakthroughs—and connects technical milestones to their
+            social and industry impact.
+          </p>
+        </div>
+
+        <div class="field"><b>Description</b>
+          <p>
+            Converted from my team’s slide deck into cohesive prose, the narrative covers Turing’s 1950 test, the 1956 Dartmouth Conference,
+            expert systems, the two AI winters, the revival via statistical learning and big data, and modern neural networks that power
+            vision, language, and generative AI. It also highlights cloud computing’s role in democratizing large-scale AI experiments and
+            deployment.
+          </p>
+        </div>
+
+        <div class="field"><b>Objective</b>
+          <p>
+            Communicate a clear, non-technical overview of AI’s timeline and inflection points so that both business and academic audiences
+            understand the “why” behind current capabilities, risks, and leadership responsibilities.
+          </p>
+        </div>
+
+        <div class="field"><b>Process</b>
+          <p>
+            Reviewed course materials and reputable sources; selected the most important milestones; drafted concise explanations; rewrote slide
+            bullets into connected paragraphs; and iterated for clarity and flow, emphasizing lessons from hype cycles and constraints in data,
+            compute, and ethics.
+          </p>
+        </div>
+
+        <div class="field"><b>Tools &amp; Technologies Used</b>
+          <p>Microsoft PowerPoint (source slides), Google Docs for drafting, basic image/timeline edits.</p>
+        </div>
+
+        <div class="field"><b>Value Proposition</b>
+          <p>
+            Demonstrates skill in synthesizing technical history into stakeholder-friendly language—useful for briefings, kickoff decks, and
+            executive conversations on AI strategy and responsible adoption.
+          </p>
+        </div>
+
+        <div class="field"><b>Unique Value</b>
+          <p>
+            Goes beyond a timeline by connecting milestones to leadership takeaways (planning for data/compute, evaluating risks, and embedding
+            responsible-AI gates early in projects).
+          </p>
+        </div>
+
+        <div class="field"><b>Relevance</b>
+          <p>
+            Supports course outcomes in AI literacy, communication, and ethical framing; provides context for later technical labs and projects.
+          </p>
+        </div>
+
+        <div class="field"><b>References (if applicable)</b>
+          <ul class="refs">
+            <li>Turing, A. (1950). Computing Machinery and Intelligence.</li>
+            <li>McCarthy, J. et al. (1956). Dartmouth Proposal.</li>
+            <li>Goodfellow, I., Bengio, Y., &amp; Courville, A. (2016). <i>Deep Learning</i>. MIT Press.</li>
+            <li>OpenAI (2023). GPT-4 Technical Report.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Artifact 2 -->
+      <div class="card">
+        <h3>Artifact 2 — AI Lab: Generative-AI Practice &amp; Career-Mentor Prototype</h3>
+
+        <div class="field"><b>Title</b>
+          <p>Career Mentor AI: Prompt Design, Research-Assistant Workflow, and Prototype</p>
+        </div>
+
+        <div class="field"><b>Introduction</b>
+          <p>
+            This artifact documents hands-on practice with generative AI: building a prompt library, comparing custom assistant personas,
+            using a research assistant to organize findings, applying design thinking, and prototyping a “Career Mentor AI” that offers
+            concise, motivational guidance.
+          </p>
+        </div>
+
+        <div class="field"><b>Description</b>
+          <p>
+            I designed tasks for learning and career help, compared tone/accuracy across assistants, captured research digests, created an
+            empathy map and problem statement, and built a mentor-style bot that gives audience-aware suggestions. The result is a repeatable,
+            user-centered approach to AI interaction design.
+          </p>
+        </div>
+
+        <div class="field"><b>Objective</b>
+          <p>
+            Learn to design reliable, audience-aware AI interactions that balance usefulness, clarity, and responsibility—and document
+            techniques I can reuse in future projects.
+          </p>
+        </div>
+
+        <div class="field"><b>Process</b>
+          <p>
+            (1) Empathize with target users and define success criteria → (2) Build a prompt library (task, tone, guardrails, evaluation) →
+            (3) Compare assistant behaviors on the same tasks → (4) Use a research assistant to structure findings → (5) Apply design
+            thinking (empathize → define → ideate → prototype → test) → (6) Draft an evaluation rubric and example conversations.
+          </p>
+        </div>
+
+        <div class="field"><b>Tools &amp; Technologies Used</b>
+          <p>Chatbase (GPT-4o), prompt engineering, research-assistant workflow, Google Docs/Notebook for notes; optional Streamlit/web UI.</p>
+        </div>
+
+        <div class="field"><b>Value Proposition</b>
+          <p>
+            Shows that I can turn a vague use-case into a working AI interaction with documented prompts, evaluation criteria, and responsible-AI
+            considerations—relevant to product, data-science, and solutions-architect roles.
+          </p>
+        </div>
+
+        <div class="field"><b>Unique Value</b>
+          <p>
+            Includes a reusable prompt library and a lightweight evaluation rubric (hallucination checks, tone fit, task completeness) that can
+            be ported quickly to new domains.
+          </p>
+        </div>
+
+        <div class="field"><b>Relevance</b>
+          <p>
+            Aligns with course goals in applied AI/ML, communication, and user-centric design; provides a concrete artifact to discuss in
+            interviews or project reviews.
+          </p>
+        </div>
+
+        <div class="field"><b>References (if applicable)</b>
+          <ul class="refs">
+            <li>Addala, S. K. (2025). AI Lab – Design Thinking &amp; Chatbot Development (Career Mentor AI).</li>
+            <li>Chatbase Documentation (2024). Custom assistant behaviors and deployment.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" style="background:#0e0e0e">
+        <p class="field" style="margin:0"><b>Note for Instructor</b>
+          <br>Per course instructions, detailed <i>reflections</i> (Customization for the Audience • Lessons Learned • Feedback &amp; Revisions)
+          are submitted in Brightspace and intentionally not included in the public portfolio.
+        </p>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Artifact 2: AI Lab – Chatbot Assistant Prototype</h2>
-    <p>
-      This artifact demonstrates my practical application of natural language processing and AI model integration. 
-      I built a chatbot prototype capable of responding to user queries using structured prompts and context-driven conversation flows. 
-      The focus was on building an ethical AI assistant that could maintain user trust through responsible data handling and clear interaction logic. 
-      This project strengthened my technical understanding of Python, machine learning workflows, and API-based integration, reflecting my commitment to building explainable and reliable AI systems.
-    </p>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>
-      Email: <a href="mailto:addalasaikishore63@gmail.com">addalasaikishore63@gmail.com</a><br>
-      GitHub: <a href="https://github.com/addalasaikishore63-arch" target="_blank">github.com/addalasaikishore63-arch</a>
-    </p>
+  <!-- Contact -->
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>
+          Email: <a href="mailto:addalasaikishore63@gmail.com">addalasaikishore63@gmail.com</a><br>
+          GitHub: <a href="https://github.com/addalasaikishore63-arch" target="_blank">github.com/addalasaikishore63-arch</a>
+        </p>
+      </div>
+    </div>
   </section>
 
   <footer>
-    © 2025 Sai Kishore Addala | Created for AI/ML Professional Portfolio
+    <div class="wrap">© 2025 Sai Kishore Addala • AI/ML Professional Portfolio</div>
   </footer>
 </body>
 </html>
