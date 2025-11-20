@@ -31,6 +31,7 @@
     .field p{margin:0;text-align:justify}
     .refs li{margin:4px 0}
     footer{border-top:1px solid var(--rule);text-align:center;color:#9aa3aa;padding:18px 10px;margin-top:10px}
+    /* small screens */
     @media (max-width:720px){
       .hero{grid-template-columns:1fr;gap:14px;text-align:center}
       .avatar{margin:0 auto}
@@ -38,7 +39,6 @@
   </style>
 </head>
 <body>
-
   <!-- Header -->
   <header>
     <div class="wrap hero">
@@ -55,6 +55,7 @@
           <a href="#contact">Contact</a>
         </nav>
       </div>
+      <!-- image will try profile.jpg, else fall back to your uploaded filename -->
       <img class="avatar" src="profile.jpg" alt="Sai Kishore Addala"
            onerror="this.onerror=null;this.src='digital-human-visualization-stockcake.jpg'">
     </div>
@@ -75,7 +76,7 @@
     </div>
   </section>
 
-  <!-- Artifacts -->
+  <!-- Artifacts (Professor's required format) -->
   <section id="artifacts">
     <div class="wrap">
       <h2>Artifacts</h2>
@@ -83,101 +84,145 @@
       <!-- Artifact 1 -->
       <div class="card">
         <h3>Artifact 1 — The Evolution of Artificial Intelligence</h3>
+
         <div class="field"><b>Title</b>
           <p>The Evolution of AI: From Early Foundations to the Generative Era</p>
         </div>
+
         <div class="field"><b>Introduction</b>
           <p>
-            This artifact traces AI’s development from early symbolic programs to today’s deep learning and generative models...
+            This artifact traces AI’s development from early symbolic programs to today’s deep learning and generative models. It explains why
+            progress arrived in waves—periods of optimism, “AI winters,” and renewed breakthroughs—and connects technical milestones to their
+            social and industry impact.
           </p>
         </div>
+
         <div class="field"><b>Description</b>
           <p>
-            Converted from my team’s slide deck into cohesive prose...
+            Converted from my team’s slide deck into cohesive prose, the narrative covers Turing’s 1950 test, the 1956 Dartmouth Conference,
+            expert systems, the two AI winters, the revival via statistical learning and big data, and modern neural networks that power
+            vision, language, and generative AI. It also highlights cloud computing’s role in democratizing large-scale AI experiments and
+            deployment.
           </p>
         </div>
 
         <div class="field"><b>Objective</b>
-          <p>Communicate a clear, non-technical overview of AI’s timeline...</p>
+          <p>
+            Communicate a clear, non-technical overview of AI’s timeline and inflection points so that both business and academic audiences
+            understand the “why” behind current capabilities, risks, and leadership responsibilities.
+          </p>
         </div>
 
         <div class="field"><b>Process</b>
-          <p>Reviewed course materials, selected milestones...</p>
+          <p>
+            Reviewed course materials and reputable sources; selected the most important milestones; drafted concise explanations; rewrote slide
+            bullets into connected paragraphs; and iterated for clarity and flow, emphasizing lessons from hype cycles and constraints in data,
+            compute, and ethics.
+          </p>
         </div>
 
         <div class="field"><b>Tools &amp; Technologies Used</b>
-          <p>Microsoft PowerPoint, Google Docs</p>
+          <p>Microsoft PowerPoint (source slides), Google Docs for drafting, basic image/timeline edits.</p>
         </div>
 
         <div class="field"><b>Value Proposition</b>
-          <p>Demonstrates skill in synthesizing technical history...</p>
+          <p>
+            Demonstrates skill in synthesizing technical history into stakeholder-friendly language—useful for briefings, kickoff decks, and
+            executive conversations on AI strategy and responsible adoption.
+          </p>
         </div>
 
         <div class="field"><b>Unique Value</b>
-          <p>Goes beyond a timeline with leadership takeaways...</p>
+          <p>
+            Goes beyond a timeline by connecting milestones to leadership takeaways (planning for data/compute, evaluating risks, and embedding
+            responsible-AI gates early in projects).
+          </p>
         </div>
 
         <div class="field"><b>Relevance</b>
-          <p>Supports course outcomes...</p>
+          <p>
+            Supports course outcomes in AI literacy, communication, and ethical framing; provides context for later technical labs and projects.
+          </p>
         </div>
 
         <div class="field"><b>References (if applicable)</b>
           <ul class="refs">
             <li>Turing, A. (1950). Computing Machinery and Intelligence.</li>
             <li>McCarthy, J. et al. (1956). Dartmouth Proposal.</li>
-            <li>Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep Learning.</li>
-            <li>OpenAI GPT-4 Technical Report.</li>
+            <li>Goodfellow, I., Bengio, Y., &amp; Courville, A. (2016). <i>Deep Learning</i>. MIT Press.</li>
+            <li>OpenAI (2023). GPT-4 Technical Report.</li>
           </ul>
         </div>
       </div>
 
       <!-- Artifact 2 -->
       <div class="card">
-        <h3>Artifact 2 — AI Lab: Generative-AI Practice & Career-Mentor Prototype</h3>
+        <h3>Artifact 2 — AI Lab: Generative-AI Practice &amp; Career-Mentor Prototype</h3>
+
         <div class="field"><b>Title</b>
           <p>Career Mentor AI: Prompt Design, Research-Assistant Workflow, and Prototype</p>
         </div>
 
         <div class="field"><b>Introduction</b>
           <p>
-            This artifact documents hands-on practice with generative AI...
+            This artifact documents hands-on practice with generative AI: building a prompt library, comparing custom assistant personas,
+            using a research assistant to organize findings, applying design thinking, and prototyping a “Career Mentor AI” that offers
+            concise, motivational guidance.
           </p>
         </div>
 
         <div class="field"><b>Description</b>
           <p>
-            I designed tasks, compared assistant personas, captured research...
+            I designed tasks for learning and career help, compared tone/accuracy across assistants, captured research digests, created an
+            empathy map and problem statement, and built a mentor-style bot that gives audience-aware suggestions. The result is a repeatable,
+            user-centered approach to AI interaction design.
           </p>
         </div>
 
         <div class="field"><b>Objective</b>
-          <p>Learn to design reliable AI interactions…</p>
+          <p>
+            Learn to design reliable, audience-aware AI interactions that balance usefulness, clarity, and responsibility—and document
+            techniques I can reuse in future projects.
+          </p>
         </div>
 
         <div class="field"><b>Process</b>
-          <p>(1) Empathize → (2) Build prompts → (3) Compare assistants → ...</p>
+          <p>
+            (1) Empathize with target users and define success criteria → (2) Build a prompt library (task, tone, guardrails, evaluation) →
+            (3) Compare assistant behaviors on the same tasks → (4) Use a research assistant to structure findings → (5) Apply design
+            thinking (empathize → define → ideate → prototype → test) → (6) Draft an evaluation rubric and example conversations.
+          </p>
         </div>
 
-        <div class="field"><b>Tools & Technologies Used</b>
-          <p>Chatbase (GPT-4o), Google Docs</p>
+        <div class="field"><b>Tools &amp; Technologies Used</b>
+          <p>Chatbase (GPT-4o), prompt engineering, research-assistant workflow, Google Docs/Notebook for notes; optional Streamlit/web UI.</p>
         </div>
 
         <div class="field"><b>Value Proposition</b>
-          <p>Shows ability to design audience-aware AI interactions...</p>
+          <p>
+            Shows that I can turn a vague use-case into a working AI interaction with documented prompts, evaluation criteria, and responsible-AI
+            considerations—relevant to product, data-science, and solutions-architect roles.
+          </p>
         </div>
 
         <div class="field"><b>Unique Value</b>
-          <p>Includes reusable prompt library…</p>
+          <p>
+            Includes a reusable prompt library and a lightweight evaluation rubric (hallucination checks, tone fit, task completeness) that can
+            be ported quickly to new domains.
+          </p>
         </div>
 
         <div class="field"><b>Relevance</b>
-          <p>Supports course goals in applied AI/ML…</p>
+          <p>
+            Aligns with course goals in applied AI/ML, communication, and user-centric design; provides a concrete artifact to discuss in
+            interviews or project reviews.
+          </p>
         </div>
 
-        <div class="field"><b>References</b>
+        <div class="field"><b>References (if applicable)</b>
           <ul class="refs">
-            <li>Addala, S.K. AI Lab – Design Thinking & Chatbot Development</li>
-            <li>Chatbase Documentation (2024)</li>
+            <li>Addala, S. K. (2025). AI Lab – Design Thinking &amp; Chatbot Development (Career Mentor AI).</li>
+            <li>Chatbase Documentation (2024). Custom assistant behaviors and deployment.</li>
           </ul>
         </div>
       </div>
@@ -185,32 +230,40 @@
       <!-- Artifact 2.1 -->
       <div class="card">
         <h3>Artifact 2.1 — Machine Learning vs. Deep Learning (Workshop 2)</h3>
+
         <div class="field"><b>Overview</b>
           <p>
-            This artifact compares ML and DL in structure, interpretability, compute…
+            This artifact comes from my Workshop 2 assignment comparing Machine Learning (ML) and Deep Learning (DL).
+            The goal of this project was to understand how these two AI approaches differ in structure, data requirements,
+            learning style, computational needs, and real-world applications.
           </p>
         </div>
 
         <div class="field"><b>Project Description</b>
           <ul>
-            <li>ML uses manual features; DL uses neural networks.</li>
-            <li>ML works on small datasets; DL requires large datasets.</li>
-            <li>ML = interpretable; DL = black box.</li>
-            <li>ML → CPUs; DL → GPUs.</li>
+            <li><strong>Model Structure:</strong> ML uses algorithms with manually engineered features, while DL uses neural networks to learn patterns automatically.</li>
+            <li><strong>Data Requirements:</strong> ML works well with smaller datasets; DL requires large labeled datasets.</li>
+            <li><strong>Interpretability:</strong> ML models are easier to interpret; DL is often considered a “black box.”</li>
+            <li><strong>Compute Needs:</strong> ML can run on CPUs; DL typically requires GPUs.</li>
+            <li><strong>Use Cases:</strong> ML → fraud detection, churn prediction, recommendations.  
+                DL → computer vision, NLP, speech recognition, autonomous driving.</li>
           </ul>
         </div>
 
         <div class="field"><b>Skills Demonstrated</b>
           <ul>
-            <li>AI literacy</li>
-            <li>Technical writing</li>
-            <li>Clear explanations</li>
+            <li>Understanding of AI/ML fundamentals</li>
+            <li>Analytical comparison and technical writing</li>
+            <li>Ability to explain complex ideas clearly</li>
+            <li>Converting classwork into a professional artifact</li>
           </ul>
         </div>
 
         <div class="field"><b>What I Learned</b>
           <p>
-            I learned key differences, when to choose which method…
+            I learned how ML and DL differ in structure, performance, data needs, and interpretability. This artifact strengthened my AI literacy
+            and my ability to communicate technical concepts to both technical and non-technical audiences. It also helped me understand when
+            to choose ML vs. DL for real-world applications.
           </p>
         </div>
       </div>
@@ -225,42 +278,76 @@
 
         <div class="field"><b>Introduction</b>
           <p>
-            This artifact focuses on structured questions around model training, tuning…
+            This artifact is based on the “3.3 Questions about Training Methods” activity, which builds on my earlier reflection from
+            “3.1 Adapting to Challenges.” The work focuses on developing thoughtful, structured questions about how AI/ML models are trained,
+            tuned, evaluated, and monitored in real-world projects, and how those decisions are communicated to different audiences.
           </p>
         </div>
 
         <div class="field"><b>Description</b>
           <p>
-            I transformed my classroom submission into a professional artifact structured under themes...
+            I revisited my original class submission and transformed it into a professional artifact that highlights my ability to think
+            critically about training choices in AI/ML systems. Instead of listing generic questions, I organized them into practical themes:
+            data quality and preparation, model training and optimization, and evaluation and monitoring over time. For each theme, I focused
+            on questions that a data scientist, ML engineer, or stakeholder should ask when deciding whether a training method is appropriate,
+            trustworthy, and ready for deployment.
           </p>
         </div>
 
         <div class="field"><b>Objective</b>
-          <p>Show ability to evaluate model training and communicate clearly</p>
+          <p>
+            Demonstrate that I can go beyond running models and can instead ask the right questions about how those models learn, what data they
+            rely on, and how robust they are in changing environments. The artifact also aims to show that I can translate these technical
+            concerns into clear language for both technical and non-technical stakeholders.
+          </p>
         </div>
 
         <div class="field"><b>Process</b>
-          <p>Grouped questions into themes, refined explanations…</p>
+          <p>
+            I started by reviewing my responses from Activities 3.1 and 3.3 and identifying where they were too short or classroom-focused.
+            Then I:
+          </p>
+          <ul>
+            <li>Grouped my questions into three themes: data quality, training methodology, and evaluation &amp; monitoring.</li>
+            <li>Rephrased questions so they could be used directly in project meetings or design reviews.</li>
+            <li>Added examples of how these questions help uncover risks like overfitting, bias, or poor generalization.</li>
+            <li>Adjusted the tone and wording so that both technical team members and non-technical decision-makers could understand the implications.</li>
+          </ul>
         </div>
 
-        <div class="field"><b>Tools & Methods Used</b>
-          <p>Course readings, structured notes, reflection prompts</p>
+        <div class="field"><b>Tools &amp; Methods Used</b>
+          <p>
+            Course readings and lecture content on training methods; reflection prompts from Activities 3.1 and 3.3; structured note-taking and
+            revision in a word processor; and this web-based portfolio to present the final artifact in a clean, audience-centered format.
+          </p>
         </div>
 
         <div class="field"><b>Value Proposition</b>
-          <p>Shows critical thinking and ability to evaluate ML systems...</p>
+          <p>
+            In many organizations, the difference between a successful AI/ML project and a failed one is not just the algorithm, but the
+            questions that are (or are not) asked about training and evaluation. This artifact shows that I bring critical-thinking skills to
+            these conversations and can help teams anticipate issues early—such as data drift, unfair outcomes, or poor interpretability.
+          </p>
         </div>
 
         <div class="field"><b>Unique Value</b>
-          <p>Practical questioning framework for real projects…</p>
+          <p>
+            Rather than being a purely theoretical piece, this artifact is written as a practical questioning framework that could be used in
+            design reviews, stakeholder meetings, or model governance discussions. It also demonstrates my ability to adapt course work into a
+            professional artifact customized for portfolio viewers.
+          </p>
         </div>
 
         <div class="field"><b>Relevance</b>
-          <p>Supports course outcomes in responsible AI…</p>
+          <p>
+            This artifact supports course outcomes related to AI/ML literacy, critical thinking, communication, and responsible AI practice. It
+            pairs well with my other artifacts by showing not only what I can build with AI tools, but also how I evaluate and communicate the
+            risks and trade-offs of those tools.
+          </p>
         </div>
       </div>
 
-      <!-- ⭐ ARTIFACT 4 INSERTED HERE -->
+      <!-- Artifact 4 -->
       <div class="card">
         <h3>Artifact 4 — Data Challenge Scenarios: Data Cleaning in Machine Learning</h3>
 
@@ -270,52 +357,78 @@
 
         <div class="field"><b>Introduction</b>
           <p>
-            This artifact comes from the Workshop 4 Data Challenge Scenarios activity. It shows how I handled real-world issues like missing values,
-            noisy sensor readings, and outliers using practical ML data-cleaning techniques.
+            This artifact comes from the Workshop 4 “Data Challenge Scenarios” activity. It focuses on how I approach real-world data quality
+            problems—specifically missing values, noisy measurements, and outliers—before training machine learning models.
           </p>
         </div>
 
         <div class="field"><b>Description</b>
-          <p>I worked through three realistic data problems:</p>
+          <p>
+            In this activity, I interacted with an AI coach to walk through three common data challenges:
+          </p>
           <ul>
-            <li><strong>Missing Data:</strong> Choosing imputation vs. dropping rows.</li>
-            <li><strong>Noisy Data:</strong> Identifying sensor spikes and smoothing values.</li>
-            <li><strong>Outliers:</strong> Checking if extremes were errors or valid cases.</li>
+            <li><strong>Missing Data:</strong> I discussed when to use imputation methods (mean, median, KNN) and when dropping records might be justified, depending on the amount and pattern of missingness.</li>
+            <li><strong>Noisy Data:</strong> I explored how to visualize noisy sensor readings, identify unrealistic spikes or drops, and apply smoothing or filtering techniques while preserving true trends.</li>
+            <li><strong>Outliers:</strong> I considered how to tell the difference between data entry errors and meaningful extreme values, and how to evaluate model performance with and without those outliers.</li>
           </ul>
+          <p>
+            Throughout the scenarios, I explained my reasoning step by step and reflected on how each decision could affect the reliability and fairness of downstream models.
+          </p>
         </div>
 
         <div class="field"><b>Objective</b>
-          <p>Show practical reasoning in data preprocessing for reliable ML models.</p>
+          <p>
+            Show that I can think critically about data preprocessing choices—not just run algorithms—and that I understand how data quality
+            directly impacts model performance, interpretability, and trustworthiness.
+          </p>
         </div>
 
         <div class="field"><b>Process</b>
-          <p>I compared different cleaning methods, chose the best fit, and explained the reasoning clearly.</p>
+          <p>
+            I approached each scenario by first identifying the core data problem, then listing possible techniques to address it. Next, I weighed
+            the pros and cons of each option, selected one or more appropriate methods, and described how I would validate the results using
+            visualizations, summary statistics, or model evaluation. Finally, I refined my explanations so that a non-technical reader could
+            follow my logic.
+          </p>
         </div>
 
-        <div class="field"><b>Tools &amp; Techniques Used</b>
-          <p>Imputation, smoothing, outlier analysis, data inspection.</p>
+        <div class="field"><b>Tools &amp; Technologies Used</b>
+          <p>
+            Conceptual data preprocessing methods (imputation, smoothing, outlier analysis), course materials on data quality, and an AI-based
+            coaching environment for scenario exploration and feedback.
+          </p>
         </div>
 
         <div class="field"><b>Value Proposition</b>
-          <p>Demonstrates real-world ML data cleaning skills and decision-making.</p>
+          <p>
+            This artifact demonstrates that I can handle messy, imperfect data in a thoughtful and structured way—an essential skill for real-world
+            AI/ML projects. It shows my ability to justify why a particular cleaning strategy is appropriate instead of blindly applying default
+            methods.
+          </p>
         </div>
 
         <div class="field"><b>Unique Value</b>
-          <p>Emphasizes reasoning, not code—useful for stakeholders.</p>
+          <p>
+            Unlike a purely code-focused artifact, this piece emphasizes my reasoning, communication, and decision-making process around data
+            quality. It captures how I think through ambiguous situations, balance trade-offs, and keep reliability and fairness in mind.
+          </p>
         </div>
 
         <div class="field"><b>Relevance</b>
-          <p>Supports course goals in data preprocessing and responsible ML workflows.</p>
+          <p>
+            This artifact supports course outcomes related to data processing, responsible AI practice, and practical ML workflows. It complements
+            my earlier artifacts by adding a clear example of how I approach data challenges before model training even begins.
+          </p>
         </div>
       </div>
 
       <!-- Note for Instructor -->
       <div class="card" style="background:#0e0e0e">
         <p class="field" style="margin:0"><b>Note for Instructor</b>
-          <br>Per course instructions, detailed <i>reflections</i> are submitted in Brightspace and not included here.
+          <br>Per course instructions, detailed <i>reflections</i> (Customization for the Audience • Lessons Learned • Feedback &amp; Revisions)
+          are submitted in Brightspace and intentionally not included in the public portfolio.
         </p>
       </div>
-
     </div>
   </section>
 
@@ -331,6 +444,5 @@
       </div>
     </div>
   </section>
-
 </body>
 </html>
